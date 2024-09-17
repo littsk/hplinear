@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "build_helper"
+backend-path = ["."]
+
+[project]
+name = "hplinear"
+version = "0.0.1"
+description = "High-performance Linear Solver"
+authors = [{name = "littsk", email = "zeweitao630@gmail.com"}]
+license = {text = "Apache-2.0"}
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/hplinear"
+"Bug Tracker" = "https://github.com/yourusername/hplinear/issues"
+
+[tool.setuptools]
+packages = ["hplinear"]
+
+[tool.setuptools_scm]
+write_to = "hplinear/version.py"

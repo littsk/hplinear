@@ -1,0 +1,4 @@
+flake8
+isort
+mypy
+pre-commit==3.5.0
